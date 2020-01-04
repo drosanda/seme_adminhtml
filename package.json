@@ -20,10 +20,11 @@
   "author": "Daeng",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.4.1",
+    "bootstrap-sass": "^3.4.1",
     "jquery": "~3.0.0"
   },
   "devDependencies": {
+    "animate-sass": "^0.8.2",
     "ansi-colors": "^4.1.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.2",
@@ -32,6 +33,8 @@
     "browser-sync": "^2.26.7",
     "dateformat": "^3.0.3",
     "fancy-log": "^1.3.3",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
@@ -65,5 +68,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/drosanda/seme_adminhtml.git"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }

@@ -61,6 +61,12 @@ function loadConfig() {
   }
 }
 
+//add fonts handler
+function fonts() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest(PATHS.dist+'/fonts'))
+}
+
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
@@ -71,7 +77,7 @@ function clean(done) {
 // This task skips over the "images", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets)
-    .pipe(gulp.dest(PATHS.dist + '/'));
+    .pipe(gulp.dest(PATHS.dist));
 }
 
 // Compile Sass into CSS
@@ -115,7 +121,6 @@ const webpack = {
     log('[webpack]', stats.toString({
       colors: true,
     }));
-
     browser.reload();
   },
 
@@ -233,11 +238,15 @@ function reload(done) {
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
+  fonts();
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/assets/scss/**/*.scss', sass)
     .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
     .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
   gulp.watch('**/*.php', reload)
+    .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
+    .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
+  gulp.watch('**/*.html', reload)
     .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
     .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
   gulp.watch('src/assets/images/**/*', gulp.series(images, reload));
