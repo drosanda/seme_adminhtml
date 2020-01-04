@@ -33,3 +33,5 @@ For create production build simply use `npm build` command.
 ## Build Production Ready Package 
 For create production build simply use `npm package` command.
 
+#### License
+This source code licensed under MIT.
