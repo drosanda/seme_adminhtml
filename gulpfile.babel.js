@@ -71,7 +71,7 @@ function clean(done) {
 // This task skips over the "images", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets)
-    .pipe(gulp.dest(PATHS.dist + '/assets'));
+    .pipe(gulp.dest(PATHS.dist + '/'));
 }
 
 // Compile Sass into CSS
@@ -90,9 +90,9 @@ function sass() {
     .pipe($.if(PRODUCTION, $.cleanCss({ compatibility: 'ie9' })))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(gulp.dest(PATHS.dist + '/css'))
     .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev.manifest()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(gulp.dest(PATHS.dist + '/css'))
     .pipe(browser.reload({ stream: true }));
 }
 
@@ -130,9 +130,9 @@ const webpack = {
         .on('error', e => { console.log(e); }),
       ))
       .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev()))
-      .pipe(gulp.dest(PATHS.dist + '/assets/js'))
+      .pipe(gulp.dest(PATHS.dist + '/js'))
       .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev.manifest()))
-      .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+      .pipe(gulp.dest(PATHS.dist + '/js'));
   },
 
   watch() {
@@ -150,7 +150,7 @@ const webpack = {
           }));
         }),
       )
-      .pipe(gulp.dest(PATHS.dist + '/assets/js'));
+      .pipe(gulp.dest(PATHS.dist + '/js'));
   },
 };
 
@@ -160,7 +160,7 @@ gulp.task('webpack:watch', webpack.watch);
 // Copy images to the "dist" folder
 // In production, the images are compressed
 function images() {
-  return gulp.src('src/assets/images/**/*')
+  return gulp.src('src/images/**/*')
     .pipe($.if(PRODUCTION, $.imagemin([
       $.imagemin.jpegtran({
         progressive: true,
@@ -178,7 +178,7 @@ function images() {
         ]
       })
 		])))
-    .pipe(gulp.dest(PATHS.dist + '/assets/images'));
+    .pipe(gulp.dest(PATHS.dist + '/images'));
 }
 
 // Create a .zip archive of the theme
