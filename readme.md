@@ -22,16 +22,13 @@ For running or gulp watch simply use
 `npm start` command.
 
 ## Build Dev Version
-For create development build simply use `npm dev` command.
-
-## Build Dev Version
-For create development build simply use `npm dev` command.
+For create development build simply use `npm run dev` command.
 
 ## Build Production Version
-For create production build simply use `npm build` command.
+For create production build simply use `npm run build` command.
 
 ## Build Production Ready Package 
-For create production build simply use `npm package` command.
+For create production build simply use `npm run package` command.
 
 #### License
-This source code licensed under MIT.
+This source code licensed under [MIT](https://opensource.org/licenses/mit-license.html).
