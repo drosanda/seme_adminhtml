@@ -1,0 +1,21 @@
+{
+  "name": "drosanda/modernwebdev",
+  "description": "modernwebdev",
+  "type": "html-theme",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daeng Rosanda",
+      "email": "drosanda@outlook.co.id"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*",
+    "wimg/php-compatibility": "*",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4"
+  }
+}
