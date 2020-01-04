@@ -108,10 +108,7 @@ const webpack = {
           exclude: /node_modules(?![\\\/]foundation-sites)/,
         },
       ],
-    },
-    externals: {
-      jquery: 'jQuery',
-    },
+    }
   },
 
   changeHandler(err, stats) {
