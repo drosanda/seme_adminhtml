@@ -1,0 +1,7 @@
+@media print {
+  #sidebar, #sidebar-alt, .content-header, .breadcrumb-top, .block-title .block-options, #page-content + footer, #to-top {display: none !important;}
+  #page-content {min-height: 0 !important; height: auto !important; padding: 0 !important;}
+  #main-container {margin: 0 !important;}
+  .block, .block.full {border: none !important; padding: 0 !important;}
+  .block-title {margin: 0 0 20px !important;}
+}

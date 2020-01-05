@@ -1,4 +1,15 @@
 //  Seme_AdminHTML settings.
+@import "//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic,700,700italic";
+@import "node_modules/nprogress/nprogress";
 @import "node_modules/animate-sass/_animate.scss";
 @import "node_modules/font-awesome/scss/font-awesome";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "preloader";
+@import "main";
+@import "header";
+@import "sidebar";
+@import "content";
+@import "extended";
+@import "helper";
+@import "responsive";
+@import "print";

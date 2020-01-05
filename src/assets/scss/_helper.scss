@@ -1,0 +1,60 @@
+
+.push-bit {
+    margin-bottom: 10px !important;
+}
+
+.push {
+    margin-bottom: 15px !important;
+}
+
+.push-top-bottom {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.display-none {
+    display: none;
+}
+
+.remove-margin {
+    margin: 0 !important;
+}
+
+.remove-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
+.remove-padding {
+    padding: 0 !important;
+}
+
+.remove-radius {
+    border-radius: 0 !important;
+}
+
+.remove-box-shadow {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.remove-transition {
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.lt-ie10 .hidden-lt-ie10 {
+    display: none !important;
+}
+
+.visible-lt-ie10 {
+    display: none;
+}
+
+.lt-ie10 .visible-lt-ie10 {
+    display: block;
+}
+
+:focus {
+    outline: 0 !important;
+}

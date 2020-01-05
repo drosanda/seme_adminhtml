@@ -1,0 +1,16 @@
+@media screen and (min-width: 992px){
+  .pull-md-left {
+    float: left;
+  }
+  .pull-md-right {
+    float: right;
+  }
+}
+@media screen and (max-width: 768px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
+}

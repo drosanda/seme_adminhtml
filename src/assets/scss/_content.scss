@@ -1,0 +1,35 @@
+.tiles {
+    margin: 0 15px 15px 15px;
+}
+.tiles .tile {
+    padding: 12px 20px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ccc;
+}
+.tiles .tile a {
+    text-decoration: none;
+}
+.tile .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 48px;
+    line-height: 1;
+    color: #ccc;
+}
+.tile .stat {
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 1;
+}
+.tile .title {
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.tiles .tile .highlight {
+    margin-top: 4px;
+    height: 2px;
+    border-radius: 2px;
+}

@@ -1,0 +1,254 @@
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+.sidebar-user {
+    padding-left: 88px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-user-avatar {
+    width: 68px;
+    height: 68px;
+    float: left;
+    padding: 2px;
+    margin-left: -78px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.sidebar-user-avatar img {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+
+.sidebar-user-name {
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 26px;
+}
+
+.sidebar-user-links a {
+    color: #ffffff;
+    opacity: 0.3;
+    margin-right: 5px;
+}
+
+.sidebar-user-links a:hover,
+.sidebar-user-links a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.sidebar-user-links a > i {
+    font-size: 14px;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+.sidebar-nav .sidebar-header:first-child {
+    margin-top: 0;
+}
+
+.sidebar-nav a {
+    display: block;
+    color: #eaedf1;
+    padding: 0 10px;
+    min-height: 35px;
+    line-height: 35px;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a:focus,
+.sidebar-nav a.open,
+.sidebar-nav li.active > a {
+    color: #ffffff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-nav a.active {
+    padding-left: 5px;
+    border-left: 5px solid #1bbae1;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-nav a > .sidebar-nav-icon {
+    margin-right: 10px;
+}
+
+.sidebar-nav a > .sidebar-nav-indicator {
+    float: right;
+    line-height: inherit;
+    margin-left: 4px;
+    -webkit-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+.sidebar-nav a > .sidebar-nav-icon,
+.sidebar-nav a > .sidebar-nav-indicator {
+    display: inline-block;
+    opacity: 0.5;
+    width: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a:hover > .sidebar-nav-icon,
+.sidebar-nav a:hover > .sidebar-nav-indicator,
+.sidebar-nav a.active,
+.sidebar-nav a.active > .sidebar-nav-icon,
+.sidebar-nav a.active > .sidebar-nav-indicator,
+.sidebar-nav a.open,
+.sidebar-nav a.open > .sidebar-nav-icon,
+.sidebar-nav a.open > .sidebar-nav-indicator,
+.sidebar-nav li.active > a,
+.sidebar-nav li.active > a > .sidebar-nav-icon,
+.sidebar-nav li.active > a > .sidebar-nav-indicator {
+    opacity: 1;
+}
+
+.sidebar-nav a.active > .sidebar-nav-indicator,
+.sidebar-nav a.open > .sidebar-nav-indicator,
+.sidebar-nav li.active > a > .sidebar-nav-indicator {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-nav li.active > ul {
+    display: block;
+}
+
+.sidebar-nav ul a {
+    margin: 0;
+    font-size: 12px;
+    padding-left: 15px;
+    min-height: 32px;
+    line-height: 32px;
+}
+
+.sidebar-nav ul a.active,
+.sidebar-nav ul a.active:hover {
+    border-left: 5px solid #1bbae1;
+    padding-left: 10px;
+}
+
+.sidebar-nav ul ul {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-nav ul ul a {
+    padding-left: 25px;
+}
+
+.sidebar-nav ul ul a.active,
+.sidebar-nav ul ul a.active:hover {
+    padding-left: 20px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    margin: 10px 0 0;
+    padding: 10px;
+    line-height: 12px;
+}
+
+.sidebar-header + .sidebar-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.sidebar-header .sidebar-header-title {
+    color: #ffffff;
+    font-size: 11px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.sidebar-header-options {
+    float: right;
+    display: inline-block;
+}
+
+.sidebar-header-options > a,
+.sidebar-nav .sidebar-header-options a {
+    float: right;
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    line-height: inherit;
+    display: block;
+    min-width: 18px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.3;
+}
+
+.sidebar-header-options a.active,
+.sidebar-header-options a:hover,
+.sidebar-header-options a:focus,
+.sidebar-nav .sidebar-header-options a.active,
+.sidebar-nav .sidebar-header-options a:hover,
+.sidebar-nav .sidebar-header-options a:focus {
+    background: none;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.sidebar-header-options a > i {
+    font-size: 14px;
+}
+.sidebar.sidebar-secondary {
+  clear: left;
+}
