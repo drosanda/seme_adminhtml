@@ -1,3 +1,8 @@
+#page-content {
+  margin-top: 0;
+  padding: 0 5px 1px;
+  background-color: $body-bg;
+}
 .tiles {
     margin: 0 15px 15px 15px;
 }
@@ -32,4 +37,27 @@
     margin-top: 4px;
     height: 2px;
     border-radius: 2px;
+}
+
+.content-header {
+  background-color: transparent;
+}
+.content-header > .row {
+  padding: 0.5em 2em;
+  margin-bottom: 0;
+}
+
+.block {
+  margin: 0 0 10px;
+  padding: 20px 15px 1px;
+  background-color: #ffffff;
+  border: 1px solid #dbe1e8;
+}
+.block-title h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+  color: #058;
 }

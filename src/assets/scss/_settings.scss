@@ -1,8 +1,10 @@
 //  Seme_AdminHTML settings.
 @import "//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic,700,700italic";
 @import "node_modules/nprogress/nprogress";
-@import "node_modules/animate-sass/_animate.scss";
+@import "node_modules/animate-sass/animate";
 @import "node_modules/font-awesome/scss/font-awesome";
+@import "node_modules/datatables/media/css/jquery.dataTables";
+@import "node_modules/datatables-bootstrap3-plugin/media/css/datatables-bootstrap3";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "preloader";
 @import "main";

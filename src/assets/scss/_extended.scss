@@ -858,7 +858,7 @@ li.dropdown-header {
 
 /* Breadcrumps */
 .breadcrumb {
-    background-color: #ffffff;
+  background-color: transparent;
 }
 
 .breadcrumb i {
@@ -866,11 +866,9 @@ li.dropdown-header {
 }
 
 .breadcrumb-top {
-    margin: -10px -5px 10px;
-    padding: 7px 10px;
-    border-top: 1px solid #eaedf1;
-    border-bottom: 1px solid #dbe1e8;
-    font-size: 12px;
+  padding: 7px 10px;
+  border-bottom: 1px solid #dbe1e8;
+  font-size: 12px;
 }
 
 .content-header + .breadcrumb-top,
