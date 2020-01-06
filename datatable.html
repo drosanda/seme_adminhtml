@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Data Table - Seme AdminHTML</title>
+  <meta name="description" content="Created By Seme Framework. The light weight framework that fit your needs with automation generated model.">
+  <meta name="keyword" content="Seme AdminCMS"/>
+  <meta name="author" content="Seme AdminCMS">
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="stylesheet" href="dist/css/app.css" />
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <header class="seme-header seme-header-image">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <img src="src/assets/images/logo.png" class="img-responsive seme-header-logo" />
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="row">
+            <div class="col-md-10 col-sm-8 col-xs-6 ">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 ">
+              <a href="#">
+                <img src="dist/images/daeng.jpg" class="seme-avatar" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="navbar" class="collapse navbar-collapse" >
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dr Djan Crocovich  <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div id="page-container" class="sidebar-visible">
+    <div id="sidebar">
+      <div>
+        <div class="sidebar-content">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="index.html"><i class="fa fa-dashboard sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
+            </li>
+            <li>
+              <a href="index2.html"><i class="fa fa-bank sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard 2</span></a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-open-cart sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">eCommerce</span></a>
+              <ul>
+                <li>
+                  <a href="page_ecom_dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                  <a href="page_ecom_orders.html">Orders</a>
+                </li>
+                <li>
+                  <a href="page_ecom_order_view.html">Order View</a>
+                </li>
+                <li>
+                  <a href="page_ecom_products.html">Products</a>
+                </li>
+                <li>
+                  <a href="page_ecom_product_edit.html">Product Edit</a>
+                </li>
+                <li>
+                  <a href="page_ecom_customer_view.html">Customer View</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-header">
+              <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Quick Settings"><i class="fa fa-cog"></i></a><a href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Create the most amazing pages with the widget kit!"><i class="gi gi-lightbulb"></i></a></span>
+              <span class="sidebar-header-title">Widget Kit</span>
+            </li>
+            <li>
+              <a href="page_widgets_stats.html"><i class="gi gi-charts sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Statistics</span></a>
+            </li>
+            <li>
+              <a href="page_widgets_social.html"><i class="gi gi-share_alt sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Social</span></a>
+            </li>
+            <li>
+              <a href="page_widgets_media.html"><i class="gi gi-film sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Media</span></a>
+            </li>
+            <li>
+              <a href="page_widgets_links.html"><i class="gi gi-link sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Links</span></a>
+            </li>
+            <li class="sidebar-header">
+              <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Quick Settings"><i class="fa fa-cog"></i></a></span>
+              <span class="sidebar-header-title">Design Kit</span>
+            </li>
+            <li>
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-certificate sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">User Interface</span></a>
+              <ul>
+                <li>
+                  <a href="page_ui_grid_blocks.html">Grid &amp; Blocks</a>
+                </li>
+                <li>
+                  <a href="page_ui_draggable_blocks.html">Draggable Blocks</a>
+                </li>
+                <li>
+                  <a href="page_ui_typography.html">Typography</a>
+                </li>
+                <li>
+                  <a href="page_ui_buttons_dropdowns.html">Buttons &amp; Dropdowns</a>
+                </li>
+                <li>
+                  <a href="page_ui_navigation_more.html">Navigation &amp; More</a>
+                </li>
+                <li>
+                  <a href="page_ui_horizontal_menu.html">Horizontal Menu</a>
+                </li>
+                <li>
+                  <a href="page_ui_progress_loading.html">Progress &amp; Loading</a>
+                </li>
+                <li>
+                  <a href="page_ui_preloader.html">Page Preloader</a>
+                </li>
+                <li>
+                  <a href="page_ui_color_themes.html">Color Themes</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-notes_2 sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Forms</span></a>
+              <ul>
+                <li>
+                  <a href="page_forms_general.html">General</a>
+                </li>
+                <li>
+                  <a href="page_forms_components.html">Components</a>
+                </li>
+                <li>
+                  <a href="page_forms_validation.html">Validation</a>
+                </li>
+                <li>
+                  <a href="page_forms_wizard.html">Wizard</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-table sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Tables</span></a>
+              <ul>
+                <li>
+                  <a href="page_tables_general.html">General</a>
+                </li>
+                <li>
+                  <a href="page_tables_responsive.html">Responsive</a>
+                </li>
+                <li>
+                  <a href="page_tables_datatables.html">Datatables</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-cup sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Icon Sets</span></a>
+              <ul>
+                <li>
+                  <a href="page_icons_fontawesome.html">Font Awesome</a>
+                </li>
+                <li>
+                  <a href="page_icons_glyphicons_pro.html">Glyphicons Pro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-show_big_thumbnails sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Page Layouts</span></a>
+              <ul>
+                <li>
+                  <a href="page_layout_static.html">Static</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_fixed_footer.html">Static + Fixed Footer</a>
+                </li>
+                <li>
+                  <a href="page_layout_fixed_top.html">Fixed Top Header</a>
+                </li>
+                <li>
+                  <a href="page_layout_fixed_top_footer.html">Fixed Top Header + Footer</a>
+                </li>
+                <li>
+                  <a href="page_layout_fixed_bottom.html">Fixed Bottom Header</a>
+                </li>
+                <li>
+                  <a href="page_layout_fixed_bottom_footer.html">Fixed Bottom Header + Footer</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_main_sidebar_mini.html">Mini Main Sidebar</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_main_sidebar_partial.html">Partial Main Sidebar</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_main_sidebar_visible.html">Visible Main Sidebar</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_alternative_sidebar_partial.html">Partial Alternative Sidebar</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_alternative_sidebar_visible.html">Visible Alternative Sidebar</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_no_sidebars.html" class=" active">No Sidebars</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_both_partial.html">Both Sidebars Partial</a>
+                </li>
+                <li>
+                  <a href="page_layout_static_animated.html">Animated Sidebar Transitions</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-header">
+              <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="" data-original-title="Quick Settings"><i class="fa fa-cog"></i></a></span>
+              <span class="sidebar-header-title">Develop Kit</span>
+            </li>
+            <li>
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-brush sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Ready Pages</span></a>
+              <ul>
+                <li>
+                  <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Errors</a>
+                  <ul>
+                    <li>
+                      <a href="page_ready_400.html">400</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_401.html">401</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_403.html">403</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_404.html">404</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_500.html">500</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_503.html">503</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Get Started</a>
+                  <ul>
+                    <li>
+                      <a href="page_ready_blank.html">Blank</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_blank_alt.html">Blank Alternative</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="page_ready_search_results.html">Search Results (4)</a>
+                </li>
+                <li>
+                  <a href="page_ready_article.html">Article</a>
+                </li>
+                <li>
+                  <a href="page_ready_user_profile.html">User Profile</a>
+                </li>
+                <li>
+                  <a href="page_ready_contacts.html">Contacts</a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>e-Learning</a>
+                  <ul>
+                    <li>
+                      <a href="page_ready_elearning_courses.html">Courses</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_elearning_course_lessons.html">Course - Lessons</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_elearning_course_lesson.html">Course - Lesson Page</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Message Center</a>
+                  <ul>
+                    <li>
+                      <a href="page_ready_inbox.html">Inbox</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_inbox_compose.html">Compose Message</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_inbox_message.html">View Message</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="page_ready_chat.html">Chat</a>
+                </li>
+                <li>
+                  <a href="page_ready_timeline.html">Timeline</a>
+                </li>
+                <li>
+                  <a href="page_ready_files.html">Files</a>
+                </li>
+                <li>
+                  <a href="page_ready_tickets.html">Tickets</a>
+                </li>
+                <li>
+                  <a href="page_ready_bug_tracker.html">Bug Tracker</a>
+                </li>
+                <li>
+                  <a href="page_ready_tasks.html">Tasks</a>
+                </li>
+                <li>
+                  <a href="page_ready_faq.html">FAQ</a>
+                </li>
+                <li>
+                  <a href="page_ready_pricing_tables.html">Pricing Tables</a>
+                </li>
+                <li>
+                  <a href="page_ready_invoice.html">Invoice</a>
+                </li>
+                <li>
+                  <a href="page_ready_forum.html">Forum (3)</a>
+                </li>
+                <li>
+                  <a href="page_ready_coming_soon.html">Coming Soon</a>
+                </li>
+                <li>
+                  <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>Login, Register &amp; Lock</a>
+                  <ul>
+                    <li>
+                      <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                      <a href="login_full.html">Login (Full Background)</a>
+                    </li>
+                    <li>
+                      <a href="login_alt.html">Login 2</a>
+                    </li>
+                    <li>
+                      <a href="login.html#reminder">Password Reminder</a>
+                    </li>
+                    <li>
+                      <a href="login_alt.html#reminder">Password Reminder 2</a>
+                    </li>
+                    <li>
+                      <a href="login.html#register">Register</a>
+                    </li>
+                    <li>
+                      <a href="login_alt.html#register">Register 2</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_lock_screen.html">Lock Screen</a>
+                    </li>
+                    <li>
+                      <a href="page_ready_lock_screen_alt.html">Lock Screen 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="fa fa-wrench sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Components</span></a>
+              <ul>
+                <li>
+                  <a href="#" class="sidebar-nav-submenu"><i class="fa fa-angle-left sidebar-nav-indicator"></i>3 Level Menu</a>
+                  <ul>
+                    <li>
+                      <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Link 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="page_comp_maps.html">Maps</a>
+                </li>
+                <li>
+                  <a href="page_comp_charts.html">Charts</a>
+                </li>
+                <li>
+                  <a href="page_comp_gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a href="page_comp_carousel.html">Carousel</a>
+                </li>
+                <li>
+                  <a href="page_comp_calendar.html">Calendar</a>
+                </li>
+                <li>
+                  <a href="page_comp_animations.html">CSS3 Animations</a>
+                </li>
+                <li>
+                  <a href="page_comp_syntax_highlighting.html">Syntax Highlighting</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="main-container">
+      <div id="page-content">
+        <!-- Static Layout Header -->
+        <div class="content-header">
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+              <div class="btn-group pull-right">
+                <a id="atambah" href="#" class="btn btn-info"><i class="fa fa-plus"></i> Baru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="breadcrumb breadcrumb-top">
+          <li>Admin</li>
+          <li>ERP Master</li>
+          <li>Bank</li>
+        </ul>
+        <!-- END Static Layout Header -->
+        
+        <!-- Content -->
+        <div class="block full">
+          
+          <div class="block-title">
+            <h2><strong>Bank</strong></h2>
+          </div>
+          
+          <div class="table-responsive">
+            <table id="semeTable" class="table table-vcenter table-condensed table-bordered">
+              <thead>
+                <tr>
+                  <th class="text-center">ID</th>
+                  <th class="text-center">BANK</th>
+                  <th class="text-center">Cabang</th>
+                  <th>Nama</th>
+                  <th>Rekening</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <!-- END Content -->
+      </div>
+      
+    </div>
+    
+  </div>
+  <script src="dist/js/app.js"></script>
+  <script>
+    var Seme = function(){
+      return {
+        init: function(){
+          console.log("Seme Init triggered");
+        },
+        datatables: function(){
+          console.log("Seme datatables triggered");
+          $.extend(true, $.fn.dataTable.defaults, {
+            "sDom": "<'row'<'col-sm-6 col-xs-5'l><'col-sm-6 col-xs-7'f>r>t<'row'<'col-sm-5 hidden-xs'i><'col-sm-7 col-xs-12 clearfix'p>>",
+            "sPaginationType": "bootstrap",
+            "oLanguage": {
+              "sLengthMenu": "_MENU_",
+              "sSearch": "<div class=\"input-group\">_INPUT_<span class=\"input-group-addon\"><i class=\"fa fa-search\"></i></span></div>",
+              "sInfo": "<strong>_START_</strong>-<strong>_END_</strong> of <strong>_TOTAL_</strong>",
+              "oPaginate": {
+                "sPrevious": "",
+                "sNext": ""
+              }
+            }
+          });
+          $.extend($.fn.dataTableExt.oStdClasses, {
+            "sWrapper": "dataTables_wrapper form-inline",
+            "sFilterInput": "form-control",
+            "sLengthSelect": "form-control"
+          });
+        },
+        print: function(){
+          
+        }
+      }
+    }();
+    Seme.init();
+    
+    var semeTable = {};
+    $(document).ready(function(e){
+      Seme.datatables();
+      if($('#semeTable').length>0){
+        semeTable = $('#semeTable')
+        .on('preXhr.dt', function ( e, settings, data ){
+          NProgress.start();
+        }).DataTable({
+          "sPaginationType": "full_numbers",
+          "order"					: [[ 0, "asc" ]],
+          "responsive"	  : true,
+          "bProcessing"		: true,
+          "bServerSide"		: true,
+          "sAjaxSource"		: "src/datatable.json",
+          "fnServerData"	: function (sSource, aoData, fnCallback, oSettings) {
+            oSettings.jqXHR = $.ajax({
+              dataType 	: 'json',
+              method 		: 'POST',
+              url 		: sSource,
+              data 		: aoData
+            }).done(function (response, status, headers, config) {
+              NProgress.done();
+              $('#semeTable > tbody').off('click', 'tr');
+              $('#semeTable > tbody').on('click', 'tr', function (e) {
+                e.preventDefault();
+                var id = $(this).find("td").html();
+                ieid = id;
+                var url = 'src/datatable-detail.json'+encodeURIComponent(ieid);
+                $.get(url).done(function(response){
+                  if(response.status==200){
+                    var dt = response.data;
+                    console.log(dt.identifier);
+                    //input nilai awal
+                    $("#ienation_code").val(dt.nation_code);
+                    //tampilkan modal
+                    $("#modal_edit").modal("show");
+                  }else{
+                    growlType = 'info';
+                    growlPesan = '<h4>Error</h4><p>Tidak dapat mengambil detail data</p>';
+                    $.bootstrapGrowl(growlPesan, {
+                      type: growlType,
+                      delay: 2500,
+                      allow_dismiss: true
+                    });
+                  }
+                });
+              });
+              fnCallback(response);
+            }).fail(function (response, status, headers, config) {
+              NProgress.done();
+              alert("Error");
+            });
+          }
+        }).on( 'error.dt', function ( e, settings, techNote, message ) {
+          NProgress.done();
+          console.log( 'An error has been reported by DataTables: ', message );
+        });
+        $('.dataTables_filter input').attr('placeholder', 'Cari');
+      }
+    });
+  </script>
+  
+  <script defer id="__bs_script__">
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+    </script>
+  </body>
+  </html>

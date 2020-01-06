@@ -1,0 +1,88 @@
+{
+  "data": [
+    [
+      "shipments",
+      "Shipments",
+      "#",
+      "0",
+      "70",
+      "<span class=\"label label-success\">Iya</span>"
+    ],
+    [
+      "shipment_qxpress_volume",
+      "QXPress Volume",
+      "shipment/qxpress_volume",
+      "1",
+      "12",
+      "<span class=\"label label-success\">Iya</span>"
+    ],
+    [
+      "shipment_qxpress_sameday",
+      "QXpress Same Day",
+      "shipment/qxpress_sameday",
+      "0",
+      "12",
+      "<span class=\"label label-success\">Iya</span>"
+    ],
+    [
+      "shipment_qxpress_nextday",
+      "QXPress Next Day",
+      "shipment/qxpress_nextday",
+      "1",
+      "15",
+      "<span class=\"label label-success\">Iya</span>"
+    ],
+    [
+      "pembelian_produksi",
+      "Produksi",
+      "pembelian/produksi",
+      "1",
+      "3",
+      "<span class=\"label label-success\">Iya</span>"
+    ],
+    [
+      "pembelian",
+      "Pembelian",
+      "pembelian",
+      "0",
+      "5",
+      "<span class=\"label label-default\">Tidak</span>"
+    ],
+    [
+      "misc_wishlist",
+      "Wishlist",
+      "misc/wishlist",
+      "1",
+      "5",
+      "<span class=\"label label-default\">Tidak</span>"
+    ],
+    [
+      "misc_trfcost",
+      "Bank Transfer Cost",
+      "misc/trfcost",
+      "1",
+      "21",
+      "<span class=\"label label-success\">Iya</span>"
+    ],
+    [
+      "misc_setup",
+      "Setup",
+      "misc/setup",
+      "1",
+      "80",
+      "<span class=\"label label-success\">Iya</span>"
+    ],
+    [
+      "misc_productwanted",
+      "Product Wanted",
+      "misc/productwanted",
+      "1",
+      "4",
+      "<span class=\"label label-default\">Tidak</span>"
+    ]
+  ],
+  "recordsFiltered": "52",
+  "recordsTotal": "52",
+  "status": 200,
+  "message": "Berhasil"
+}
