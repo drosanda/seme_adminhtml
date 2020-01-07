@@ -13,8 +13,10 @@ require("jquery-validation");
 require("jquery-sparkline");
 require("jquery.flot");
 require("jquery.resize");
+require("jquery.growl");
 require("jquery-slimscroll");
 require("datatables");
+
 
 import dataTable from 'datatables';
 window.dataTable = dataTable;

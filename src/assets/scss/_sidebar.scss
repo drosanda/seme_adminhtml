@@ -2,7 +2,7 @@
   width: 0;
   position: absolute;
   overflow: hidden;
-  background-color: $preloader-bg;
+  background-color: $sidebar-bg;
 }
 .sidebar-visible #main-container {
   margin-left: 200px;
@@ -12,7 +12,7 @@
   opacity: 1;
 }
 .sidebar-content {
-  color: #ffffff;
+  color: $sidebar-color;
 }
 .sidebar-nav {
     list-style: none;
@@ -37,7 +37,7 @@
     text-align: center;
 }
 .sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a.open, .sidebar-nav li.active > a {
-    color: #ffffff;
+    color: $sidebar-hover;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.15);
 }
