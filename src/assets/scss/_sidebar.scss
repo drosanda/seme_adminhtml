@@ -3,6 +3,8 @@
   position: absolute;
   overflow: hidden;
   background-color: $sidebar-bg;
+  -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 .sidebar-visible #main-container {
   margin-left: 200px;
