@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Graph - Seme AdminHTML</title>
+  <meta name="description" content="Created By Seme Framework. The light weight framework that fit your needs with automation generated model.">
+  <meta name="keyword" content="Seme AdminCMS"/>
+  <meta name="author" content="Seme AdminCMS">
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="stylesheet" href="dist/css/app.css" />
+  <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+  <header class="seme-header seme-header-image">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <a href="">
+            <img src="src/assets/images/logo.png" class="img-responsive seme-header-logo" />
+          </a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="row">
+            <div class="col-md-10 col-sm-8 col-xs-6 ">
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 ">
+              <a href="#">
+                <img src="dist/images/daeng.jpg" class="seme-avatar" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="page-container" class="sidebar-visible">
+    <div id="sidebar">
+      <div class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="index.html"><i class="fa fa-dashboard sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Home</span></a>
+            </li>
+            <li>
+              <a href="datatable.html"><i class="fa fa-bank sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Datatable</span></a>
+            </li>
+            <li class="active">
+              <a href="graph.html"><i class="fa fa-bar-chart sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Graph</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="main-container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div id="navbar" class="collapse navbar-collapse" >
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#" class="btn-sidebar-toggle"><i class="fa fa-list"></i></a>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dr Djan Crocovich  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div id="page-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="chart-overview" style="height: 60vh;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="clearfix">
+        <div class="pull-right">
+          Made with <i class="fa fa-heart text-danger"></i> by <a href="https://cenah.co.id/" target="_blank">Cenah</a>
+        </div>
+        <div class="pull-left">
+          Application Name - Administrator - version 1.0.0 &copy; <span id="year-copy">2020</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="dist/js/app.js"></script>
+  <script defer>
+  var chartOverview;
+
+  // Random data for the charts
+  var dataEarnings    = [[1, 11600], [2, 13950], [3, 10900], [4, 10050], [5, 11000], [6, 14300], [7, 12500], [8, 15050], [9, 12650], [10, 14000], [11, 15000], [12, 17900]];
+  var dataOrders      = [[1, 3000], [2, 3500], [3, 2900], [4, 3800], [5, 2800], [6, 2408], [7, 2682], [8, 4400], [9, 5400], [10, 4750], [11, 6100], [12, 7560]];
+  var dataOrders2      = [[1, 2879], [2, 1231], [3, 8787], [4, 7762], [5, 5010], [6, 4010], [7, 3010], [8, 2010], [9, 1010], [10, 1500], [11, 1800], [12, 2400]];
+
+  // Array with month labels used in Classic and Stacked chart
+  var chartMonths     = [[1, 'Jan'], [2, 'Feb'], [3, 'Mar'], [4, 'Apr'], [5, 'May'], [6, 'Jun'], [7, 'Jul'], [8, 'Aug'], [9, 'Sep'], [10, 'Oct'], [11, 'Nov'], [12, 'Dec']];
+
+  // Overview Chart
+  $(document).ready(function(e){
+    function loadGraph(){
+    chartOverview = $('#chart-overview');
+    console.log(chartOverview);
+    $.plot(chartOverview,
+        [
+            {
+                label: 'Earnings',
+                data: dataEarnings,
+                lines: {show: true, fill: true, fillColor: {colors: [{opacity: 0.25}, {opacity: 0.25}]}},
+                points: {show: true, radius: 6}
+            },
+            {
+                label: 'Orders',
+                data: dataOrders,
+                lines: {show: true, fill: true, fillColor: {colors: [{opacity: 0.15}, {opacity: 0.15}]}},
+                points: {show: true, radius: 6}
+            },
+            {
+                label: 'Penjualan',
+                data: dataOrders2,
+                lines: {show: true, fill: true, fillColor: {colors: [{opacity: 0.15}, {opacity: 0.15}]}},
+                points: {show: true, radius: 6}
+            }
+        ],
+        {
+            colors: ['#1bbae1', '#333333'],
+            legend: {show: true, position: 'nw', margin: [15, 10]},
+            grid: {borderWidth: 0, hoverable: true, clickable: true},
+            yaxis: {ticks: 3, tickColor: '#f1f1f1'},
+            xaxis: {ticks: chartMonths, tickColor: '#ffffff'}
+        }
+    );
+
+    // Creating and attaching a tooltip to the classic chart
+    var previousPoint = null, ttlabel = null;
+    chartOverview.bind('plothover', function(event, pos, item) {
+
+        if (item) {
+            if (previousPoint !== item.dataIndex) {
+                previousPoint = item.dataIndex;
+
+                $('#chart-tooltip').remove();
+                var x = item.datapoint[0], y = item.datapoint[1];
+
+                if (item.seriesIndex === 1) {
+                    ttlabel = '<strong>' + y + '</strong> Orders';
+                } else {
+                    ttlabel = '$ <strong>' + y + '</strong>';
+                }
+
+                $('<div id="chart-tooltip" class="chart-tooltip">' + ttlabel + '</div>')
+                    .css({top: item.pageY - 45, left: item.pageX + 5}).appendTo("body").show();
+            }
+        }
+        else {
+            $('#chart-tooltip').remove();
+            previousPoint = null;
+        }
+    });
+  }
+    $("body").on("click",".btn-sidebar-toggle",function(e){
+      e.preventDefault();
+      $("#page-container").toggleClass("sidebar-visible");
+    });
+    loadGraph();
+    
+    //load data by ajax
+    NProgress.start();
+    $.get('src/graph.json').done(function(dt){
+      console.log(dt);
+      dt = JSON.parse(dt);
+      dataEarnings = dt.dataEarnings;
+      dataOrders = dt.dataOrders;
+      dataOrders2 = dt.dataOrders2;
+      setTimeout(function(){
+        NProgress.done();
+        loadGraph();
+      },3000);
+    }).fail(function(){
+      NProgress.done();
+      alert("Failed loading src/graph.json");
+    })
+  });
+  </script>
+
+  <script defer id="__bs_script__">
+  document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
+  </script>
+  </body>
+  
+  </html>
