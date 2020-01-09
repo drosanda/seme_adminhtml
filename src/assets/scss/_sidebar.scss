@@ -6,6 +6,8 @@
   -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
+#sidebar .sidebar-wrapper {
+}
 .sidebar-visible #main-container {
   margin-left: 200px;
 }
