@@ -1,0 +1,15 @@
+#login-container, #login-alt-container {
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 1000;
+}
+@media screen and (min-width: 768px){
+  #login-container, #login-alt-container {
+    width: 480px;
+    top: 186px;
+    margin-left: -240px;
+  }
+}
