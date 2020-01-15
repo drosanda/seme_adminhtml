@@ -1,5 +1,7 @@
 var Seme = function(){
   var pc;
+  var hdr;
+  var bhs;
   //utility
   var getWindowWidth = function(){
     return window.innerWidth
@@ -30,6 +32,15 @@ var Seme = function(){
   var ui = function(){
     backToTop();
     pc = $("#page-container");
+    hdr = $("header.seme-header");
+    $("body").off("click",".btn-header-show");
+    $("body").on("click",".btn-header-show",function(e){
+      e.preventDefault();
+      hdr.slideToggle("slow");
+      if($(this).find("i").hasClass("fa-ravelry")){
+        $(this).find("i").toggleClass("fa-spin");
+      }
+    });
     $('.select-select2').select2();
     $('.input-datepicker, .input-daterange').datepicker({weekStart: 1});
     $('.input-datepicker-close').datepicker({weekStart: 1}).on('changeDate', function(e){ $(this).datepicker('hide'); });
@@ -48,6 +59,9 @@ var Seme = function(){
     },
     sidebar: function(){
       pc.toggleClass("sidebar-visible");
+    },
+    header: function(){
+      hdr.toggleClass("seme-header-invisible");
     },
     datatables: function(){
       console.log("Seme datatables triggered");

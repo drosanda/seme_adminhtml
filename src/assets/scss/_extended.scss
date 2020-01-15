@@ -866,18 +866,18 @@ li.dropdown-header {
 }
 
 .breadcrumb-top {
-  padding: 2em 2.5em 0.25em;
-  border-bottom: 1px solid #dbe1e8;
+  margin-top: 0.25em;
+  border: $border-grey;
   font-size: 12px;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
-
-.content-header + .breadcrumb-top,
-.breadcrumb-top + .content-header {
-    margin-top: -11px;
-}
-
 .breadcrumb > li + li:before {
     content: "\203a";
+}
+
+.breadcrumb.breadcrumb-top li {
+  color: #9b9b9b;
 }
 
 /* Progress Bars */
@@ -1610,7 +1610,6 @@ p, .table, .alert, .carousel {
 .navbar,
 .dropdown-menu,
 .tooltip-inner,
-.breadcrumb,
 .alert.alert-alt {
-    border-radius: 0;
+    border-radius: 0px;
 }

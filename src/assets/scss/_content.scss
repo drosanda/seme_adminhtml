@@ -50,7 +50,8 @@
 
 .block {
   margin: 0 0 10px;
-  padding: 20px 15px 1px;
+  padding: 1em 0.5em;
+  padding-top: 0.75em;
   background-color: #ffffff;
   border: 1px solid #dbe1e8;
 }
@@ -86,4 +87,60 @@
   background-color: #1bbae1;
   text-decoration: none;
   opacity: 1;
+}
+
+a.wijet {
+  display: block;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+a.wijet:hover, a.wijet:focus, a.wijet:active {
+    text-decoration: none;
+}
+a.wijet.wijet-h1 {
+  -webkit-transform: translateY(-3px);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+a.wijet.wijet-h1:hover, a.wijet.wijet-h1:focus {
+  -webkit-transform: none;
+  -webkit-box-shadow: none;
+  transform: none;
+  box-shadow: none;
+}
+.wijet {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+.wijet-simple {
+  padding: 15px;
+}
+.wijet .wijet-image, .wijet .wijet-icon {
+  width: 64px;
+  height: 64px;
+}
+.wijet .wijet-icon {
+  display: inline-block;
+  line-height: 64px;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+  border-radius: 32px;
+}
+.wijet-simple .wijet-image, .wijet-simple .wijet-icon {
+    margin: 0 15px;
+}
+.wijet-simple .wijet-image.pull-left, .wijet-simple .wijet-icon.pull-left {
+    margin-left: 0;
+}
+.wijet-simple .wijet-content {
+    font-size: 18px;
+    margin: 12px 0;
+}
+.wijet-simple .wijet-content small {
+    display: block;
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: 400;
 }

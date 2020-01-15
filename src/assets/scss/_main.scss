@@ -29,6 +29,44 @@ footer {
     color: $nav-foot-color;
 }
 
+.content-header-media {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  border-top-color: #222222;
+}
+.content-header-media .header-section {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+}
+.content-header h1, .content-header h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 32px;
+}
+.content-header-media small, .content-header-media i {
+  color: #dddddd;
+}
+.content-header-media .header-cover > img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2560px;
+    height: 248px;
+    margin-left: -1280px;
+}
+.header-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 320px;
+}
+
 .header-section {
   padding: 1em;
 }

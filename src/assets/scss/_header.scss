@@ -1,5 +1,11 @@
 .seme-header {
   padding: 1em 0;
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+.seme-header.seme-header-visible {
+  display: block;
 }
 .seme-header.seme-header-image {
   background-size: cover;
@@ -37,4 +43,7 @@ div.header-lined .breadcrumb li a {
 }
 .navbar {
   margin-bottom: 0;
+}
+.fa.fa-ravelry.fa-spin {
+  color: $color-neon;
 }
