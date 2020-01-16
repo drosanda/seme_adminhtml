@@ -18,6 +18,7 @@ require("jquery-slimscroll");
 require("bootstrap-growl-ifightcrime");
 require("bootstrap-datepicker");
 require("datatables");
+require("quill");
 
 import dataTable from 'datatables';
 window.dataTable = dataTable;
