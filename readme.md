@@ -1,7 +1,7 @@
 # Seme Framework AdminHTML Theme
 This pilot project for dmin HTML Theme for Seme Framework.
 
-## Installation
+## HTML Theme Installation
 Open your terminal or CMD:
 - Change dir into desired directory, example if using XAMPP : 
   - [WINDOWS] `cd d:\XAMPP\htdocs\` or
@@ -12,6 +12,34 @@ Open your terminal or CMD:
 - and then `git clone https://github.com/drosanda/seme_adminhtml.git seme_adminhtml`
 - after cloned run `cd seme_adminhtml`
 - and then run `npm install`
+
+## Integrating to Seme Framework
+You can add this template to Seme framework skin directory as [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
+### Clone repo as Submodule
+First thing first we have to clone repo as submodule.
+- Change dir into Seme framework root.
+- goto skin directory inside Seme framework.
+- execute `git clone https://github.com/drosanda/seme_adminhtml.git admin`
+- goto admin directory
+- execute `npm install`
+- and finally you can proceed to next step.
+
+### Add to theme on Seme Framework
+After clone and installation completed, you can add the CSS and JS into your theme.
+- Create file on `app/view/admin/script.json`.
+- Fill up the content of file with ```json
+[
+  "<script src=\"{{base_url}}skin/admin/dist/js/app.js\"><\/script>"
+]
+```
+- Create file on `app/view/admin/theme.json`.
+- Fill up the content of file with ```json
+[
+	"<link rel=\"stylesheet\" href=\"{{base_url}}skin/admin/dist/css/app.css\" \/>"
+]
+```
+- and the rest, you can add your template html in Seme framework documentation.
 
 ## Configuration
 First open and edit config-default.yaml and please fill your URL fit with your local server configuration. Example:
