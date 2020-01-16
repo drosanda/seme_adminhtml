@@ -67,17 +67,17 @@ var Seme = function(){
       console.log("dataTable version: "+$.fn.dataTable.version);
       console.log("Seme datatables triggered");
       $.extend(true, $.fn.dataTable.defaults, {
-        "sDom": "<'row'<'col-sm-6 col-xs-5'l><'col-sm-6 col-xs-7'f>r>t<'row'<'col-sm-5 hidden-xs'i><'col-sm-7 col-xs-12 clearfix'p>>",
-        "sPaginationType": "bootstrap",
-        "oLanguage": {
-          "sLengthMenu": "_MENU_",
-          "sSearch": "<div class=\"input-group\">_INPUT_<span class=\"input-group-addon\"><i class=\"fa fa-search\"></i></span></div>",
-          "sInfo": "<strong>_START_</strong>-<strong>_END_</strong> of <strong>_TOTAL_</strong>",
-          "oPaginate": {
-            "sPrevious": "",
-            "sNext": "",
-            "previous": "",
-            "next": ""
+        "dom": "<'row'<'col-sm-6 col-xs-5'l><'col-sm-6 col-xs-7'f>r>t<'row'<'col-sm-5 hidden-xs'i><'col-sm-7 col-xs-12 clearfix'p>>",
+        "pagingType": "full_numbers",
+        "language": {
+          "lengthMenu": "_MENU_",
+          "search": "<div class=\"input-group\">_INPUT_<span class=\"input-group-addon\"><i class=\"fa fa-search\"></i></span></div>",
+          "info": "<strong>_START_</strong>-<strong>_END_</strong> of <strong>_TOTAL_</strong>",
+          "paginate": {
+            "first": "",
+            "last": "",
+            "next": '<span class="pagination-default"></span><span class="pagination-fa"><i class="fa fa-chevron-right" ></i></span>',
+            "previous": '<span class="pagination-default"></span><span class="pagination-fa"><i class="fa fa-chevron-left" ></i></span>',
           }
         }
       });
