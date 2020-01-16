@@ -64,6 +64,7 @@ var Seme = function(){
       hdr.toggleClass("seme-header-invisible");
     },
     datatables: function(){
+      console.log("dataTable version: "+$.fn.dataTable.version);
       console.log("Seme datatables triggered");
       $.extend(true, $.fn.dataTable.defaults, {
         "sDom": "<'row'<'col-sm-6 col-xs-5'l><'col-sm-6 col-xs-7'f>r>t<'row'<'col-sm-5 hidden-xs'i><'col-sm-7 col-xs-12 clearfix'p>>",
@@ -74,7 +75,9 @@ var Seme = function(){
           "sInfo": "<strong>_START_</strong>-<strong>_END_</strong> of <strong>_TOTAL_</strong>",
           "oPaginate": {
             "sPrevious": "",
-            "sNext": ""
+            "sNext": "",
+            "previous": "",
+            "next": ""
           }
         }
       });
