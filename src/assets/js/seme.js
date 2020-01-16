@@ -75,10 +75,34 @@ var Seme = function(){
       $(this).focus();
     });
   }
+  var formModuleSearch = function(){
+    $("#form_module_search").on("submit",function(e){
+      e.preventDefault();
+      var fl = $("#form_module_search").find("input[name='filter']").val().toUpperCase();
+      console.log("fl: "+fl);
+      $.each($(".sidebar-nav-menu"),function(k,v){
+        $(this).siblings("ul").show("fast");
+        $.each($(this).siblings("ul"),function(k2,v2){
+          //console.log(k2+": "+v2+" value: "+$(v2).find("li").html().trim());
+          $.each($(v2).children("li"),function(k3,v3){
+            //console.log(k3+": "+v3+" value: "+$(v3).find("a").html().trim());
+            console.log("str: "+$(v3).find("a").html().trim().toUpperCase());
+            console.log("idxOf: "+$(v3).find("a").html().trim().toUpperCase().indexOf(fl));
+            if($(v3).find("a").html().trim().toUpperCase().indexOf(fl) > -1){
+              $(v3).show();
+            }else{
+              $(v3).hide();
+            }
+          })
+        })
+      });
+    });
+  }
   return {
     init: function(){
       console.log("Seme Init triggered");
       ui();
+      formModuleSearch();
       afterLoad();
     },
     sidebar: function(){
