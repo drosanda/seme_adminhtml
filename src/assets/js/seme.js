@@ -40,8 +40,8 @@ var Seme = function(){
     pc = $("#page-container");
     hdr = $("header.seme-header");
     sideBarMenu();
-    $("body").off("click",".btn-header-show");
-    $("body").on("click",".btn-header-show",function(e){
+    $("#btn-header-show").off("click");
+    $("#btn-header-show").on("click",function(e){
       e.preventDefault();
       hdr.slideToggle("slow");
       if($(this).find("i").hasClass("fa-ravelry")){

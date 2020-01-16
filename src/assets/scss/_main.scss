@@ -92,3 +92,11 @@ footer {
   border-radius: 25px !important;
   background-color: #1bbae1;
 }
+#form_module_search {
+  display: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.sidebar-visible #form_module_search {
+  display: block;
+}
