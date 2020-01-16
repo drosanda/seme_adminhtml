@@ -1,7 +1,13 @@
+/*
+ *  Document   : seme.js
+ *  Author     : Seme Framework
+ *  Description: Custom scripts and plugin initializations (available to all pages)
+ */
 var Seme = function(){
   var pc;
   var hdr;
   var bhs;
+  
   //utility
   var getWindowWidth = function(){
     return window.innerWidth
@@ -33,6 +39,7 @@ var Seme = function(){
     backToTop();
     pc = $("#page-container");
     hdr = $("header.seme-header");
+    sideBarMenu();
     $("body").off("click",".btn-header-show");
     $("body").on("click",".btn-header-show",function(e){
       e.preventDefault();
@@ -50,6 +57,23 @@ var Seme = function(){
     if (pw.hasClass('page-loading')) {
       pw.removeClass('page-loading');
     }
+  }
+  var sideBarMenu = function(){
+    $.each($(".sidebar-nav-menu"),function(k,v){
+      $(this).siblings("ul").hide("");
+    });
+    $.each($(".sidebar-nav-menu"),function(k,v){
+      if($(this).parent().hasClass("active")){
+        $(this).siblings("ul").slideToggle("fast");
+      }
+    });
+    $("body").off("click",".sidebar-nav-menu");
+    $("body").on("click",".sidebar-nav-menu",function(e){
+      e.preventDefault();
+      $(this).siblings("ul").slideToggle("slow");
+      console.log("Dulur: "+$(this).siblings("ul"));
+      $(this).focus();
+    });
   }
   return {
     init: function(){
