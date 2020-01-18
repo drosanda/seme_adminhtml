@@ -30,8 +30,8 @@ if(is_log){
   console.log("jquery.flot loaded?", $().flot instanceof Function);
   console.log("jquery.plot loaded?", $().plot instanceof Function);
   console.log("jquery.resize loaded?", $().resize instanceof Function);
+  console.log("jquery.datepicker loaded?", $().datepicker instanceof Function);
   console.log("jquery.slimScroll loaded?", $().slimScroll instanceof Function);
-  console.log("bootstrap-datepicker loaded?", $().datepicker instanceof Function);
   console.log("bootstrap-growl-ifightcrime loaded?", $().bootstrapGrowl instanceof Function);
   console.log("select2 loaded?", $().select2 instanceof Function);
   console.log("NProgress is a", typeof NProgress );
@@ -48,6 +48,13 @@ if(is_log){
   console.log("Seme type: ", typeof Seme);
   console.log("Seme", window.Seme instanceof Object);
 }
+import CKEDITOR from '@ckeditor/ckeditor5-build-classic';
+window.CKEDITOR = CKEDITOR;
+if(is_log){
+  console.log("ClassicEditor: ", typeof CKEDITOR);
+  console.log("ClassicEditor", window.CKEDITOR instanceof Object);
+}
+window.editors = {};
 
 
 $("body").on("click",".btn-sidebar-toggle",function(e){

@@ -19,8 +19,7 @@ var Seme = function(){
   var backToTop = function() {
     var link = $('#back-to-top');
     $(window).scroll(function() {
-      // If the user scrolled a bit (150 pixels) show the link in large resolutions
-      if (($(this).scrollTop() > 150) && (getWindowWidth() > 991)) {
+      if (($(this).scrollTop() > 100) && (getWindowWidth() > 991)) {
         link.fadeIn(100);
       } else {
         link.fadeOut(100);
@@ -48,9 +47,33 @@ var Seme = function(){
         $(this).find("i").toggleClass("fa-spin");
       }
     });
-    $('.select-select2').select2();
+    $('.select-select2').select2({
+      theme: "bootstrap"
+    });
     $('.input-datepicker, .input-daterange').datepicker({weekStart: 1});
     $('.input-datepicker-close').datepicker({weekStart: 1}).on('changeDate', function(e){ $(this).datepicker('hide'); });
+    if($(".ckeditor").length >0 ){
+      window.CKEDITOR.create(
+        document.querySelector('.ckeditor'),
+        {
+          toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
+          heading: {
+              options: [
+                  { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                  { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                  { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+              ]
+          }
+        }
+      ).then( editor => {
+        $.each($(".ckeditor"),function(k,v){
+          var elementId = $(v).attr("id");
+          window.editors[elementId] = editor;
+        });
+      }).catch(error => {
+        console.log(error);
+      });
+    }
   }
   var afterLoad = function(){
     var pw = $('#page-wrapper');
