@@ -144,3 +144,16 @@ a.wijet.wijet-h1:hover, a.wijet.wijet-h1:focus {
     font-size: 13px;
     font-weight: 400;
 }
+.row.row-filter {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px #ededed dashed;
+}
+
+#login-container .login-title.text-center {
+  padding: 0.5em;
+}
+
+#login-container .login-title.text-center img.img-responsive {
+  max-height: 3em;
+}
