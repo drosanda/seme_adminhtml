@@ -13,6 +13,7 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import log           from 'fancy-log';
 import colors        from 'ansi-colors';
+var uglify = require('gulp-terser');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -128,9 +129,15 @@ const webpack = {
     return gulp.src(PATHS.entries)
       .pipe(named())
       .pipe(webpackStream(webpack.config, webpack2))
-      .pipe($.if(PRODUCTION, $.uglify()
-        .on('error', e => { console.log(e); }),
-      ))
+      .pipe(
+        $.if(
+          PRODUCTION, 
+          uglify({ 
+           mangle: false, 
+           ecma: 6 
+          })
+        )
+      )
       .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev()))
       .pipe(gulp.dest(PATHS.dist + '/js'))
       .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev.manifest()))
