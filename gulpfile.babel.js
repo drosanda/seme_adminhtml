@@ -244,8 +244,8 @@ function watch() {
     .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
     .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
   gulp.watch('**/*.php', reload)
-    .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
-    .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
+    .on('change', path => log('File ' + colors.bold(colors.red(path)) + ' changed.'))
+    .on('unlink', path => log('File ' + colors.bold(colors.red(path)) + ' was removed.'));
   gulp.watch('**/*.html', reload)
     .on('change', path => log('File ' + colors.bold(colors.cyan(path)) + ' changed.'))
     .on('unlink', path => log('File ' + colors.bold(colors.cyan(path)) + ' was removed.'));
