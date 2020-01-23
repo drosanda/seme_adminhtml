@@ -50,8 +50,15 @@ var Seme = function(){
     $('.select-select2').select2({
       theme: "bootstrap"
     });
+    
+    //datepicker
     $('.input-datepicker, .input-daterange').datepicker({weekStart: 1});
     $('.input-datepicker-close').datepicker({weekStart: 1}).on('changeDate', function(e){ $(this).datepicker('hide'); });
+    
+    //timepicker
+    $('.input-timepicker').timepicker({minuteStep: 1,showSeconds: true,showMeridian: true});
+    $('.input-timepicker24').timepicker({minuteStep: 1,showSeconds: true,showMeridian: false});
+    
     if($(".ckeditor").length >0 ){
       window.CKEDITOR.create(
         document.querySelector('.ckeditor'),

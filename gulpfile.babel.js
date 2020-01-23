@@ -67,6 +67,10 @@ function fonts() {
   return gulp.src('node_modules/font-awesome/fonts/*')
     .pipe(gulp.dest(PATHS.dist+'/fonts'))
 }
+function glyph() {
+  return gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/*')
+    .pipe(gulp.dest(PATHS.dist+'/fonts/bootstrap/'))
+}
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -246,6 +250,7 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   fonts();
+  glyph();
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/assets/scss/**/*.scss', sass)
     .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))

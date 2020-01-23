@@ -17,6 +17,7 @@ require("jquery.growl");
 require("jquery-slimscroll");
 require("bootstrap-growl-ifightcrime");
 require("bootstrap-datepicker");
+require("bootstrap-timepicker");
 require("datatables");
 require("quill");
 

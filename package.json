@@ -22,6 +22,7 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^16.0.0",
     "bootstrap-sass": "^3.4.1",
+    "bootstrap-timepicker": "^0.5.2",
     "datatables-bootstrap3-plugin": "^0.6.0",
     "jquery": "~3.4.1"
   },
