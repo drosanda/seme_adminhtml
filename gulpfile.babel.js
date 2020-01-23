@@ -64,10 +64,12 @@ function loadConfig() {
 
 //add fonts handler
 function fonts() {
+  log(colors.green('Font Awesome pasted!'));
   return gulp.src('node_modules/font-awesome/fonts/*')
     .pipe(gulp.dest(PATHS.dist+'/fonts'))
 }
 function glyph() {
+  log(colors.green('Glyphicon pasted!'));
   return gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/*')
     .pipe(gulp.dest(PATHS.dist+'/fonts/bootstrap/'))
 }
@@ -130,6 +132,8 @@ const webpack = {
   },
 
   build() {
+    fonts();
+    glyph();
     return gulp.src(PATHS.entries)
       .pipe(named())
       .pipe(webpackStream(webpack.config, webpack2))
