@@ -144,6 +144,25 @@ a.wijet.wijet-h1:hover, a.wijet.wijet-h1:focus {
     font-size: 13px;
     font-weight: 400;
 }
+.wijet .wijet-ekstra-full, .wijet .wijet-ekstra {
+  position: relative;
+  padding: 0.25em;
+}
+.wijet .wijet-pilihan, .wijet .wijet-pilihan-kiri {
+  top: 5px;
+  opacity: 0.5;
+  position: absolute;
+}
+.wijet .wijet-pilihan {
+  right: 5px;
+}
+.wijet .wijet-isi-tipis {
+  color: #ffffff;
+}
+.wijet .wijet-isi-tipis small {
+  color: #eeeeee;
+}
+
 .row.row-filter {
   padding-bottom: 1em;
   margin-bottom: 1em;
