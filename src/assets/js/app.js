@@ -18,7 +18,9 @@ require("jquery-slimscroll");
 require("bootstrap-growl-ifightcrime");
 require("bootstrap-datepicker");
 require("datatables");
-require("quill");
+
+import Quill from 'quill';
+window.Quill = Quill;
 
 import dataTable from 'datatables';
 window.dataTable = dataTable;
@@ -38,6 +40,7 @@ if(is_log){
   console.log("NProgress loaded?", NProgress.start instanceof Function);
   console.log("dataTable is a", typeof dataTable );
   console.log("dataTable loaded?", $().dataTable instanceof Function);
+  console.log("quill loaded?", Quill instanceof Object);
 }
 
 //load seme.js
