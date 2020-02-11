@@ -1,5 +1,5 @@
 # Seme Framework AdminHTML Theme
-This pilot project for dmin HTML Theme for Seme Framework.
+This pilot project for dmin HTML Theme for Seme Framework using gulp and webpack.
 
 ## Installation
 You can install this repo as HTML theme. Todo that open your terminal or CMD:
@@ -59,17 +59,17 @@ The source of SCSS are in src/assets/scss/.
 #### JS
 The source of JS are in src/assets/JS/.
 
-## Running Development
-For running or gulp watch simply use 
+## Run the Script
+For running the script or gulp watch simply use 
 `npm start` command.
 
-## Build Dev Version
+### Build Dev Version
 For create development build simply use `npm run dev` command.
 
-## Build Production Version
+### Build Production Version
 For create production build simply use `npm run build` command.
 
-## Build Production Ready Package 
+#### Build Production Ready Package 
 For create production build simply use `npm run package` command.
 
 ## Contributors

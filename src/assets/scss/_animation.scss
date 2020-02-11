@@ -1,33 +1,64 @@
 @keyframes pulseSlow {
     0% {
-        transform: scale(1.1);
+        transform: scale(1.14);
     }
     50% {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1.14);
     }
 }
 
 @-webkit-keyframes pulseSlow {
     0% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.14);
     }
     50% {
         -webkit-transform: scale(1);
     }
     100% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.14);
     }
 }
 .animation-pulseSlow {
     animation-name: pulseSlow;
     -webkit-animation-name: pulseSlow;
-    animation-duration: 30s;
-    -webkit-animation-duration: 30s;
+    animation-duration: 33s;
+    -webkit-animation-duration: 33s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
+}
+.animation-fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    100% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        opacity: 1;
+    }
 }

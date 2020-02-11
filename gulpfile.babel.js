@@ -13,6 +13,7 @@ import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 import log           from 'fancy-log';
 import colors        from 'ansi-colors';
+var uglify = require('gulp-terser');
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -63,8 +64,14 @@ function loadConfig() {
 
 //add fonts handler
 function fonts() {
+  log(colors.green('Font Awesome pasted!'));
   return gulp.src('node_modules/font-awesome/fonts/*')
     .pipe(gulp.dest(PATHS.dist+'/fonts'))
+}
+function glyph() {
+  log(colors.green('Glyphicon pasted!'));
+  return gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/*')
+    .pipe(gulp.dest(PATHS.dist+'/fonts/bootstrap/'))
 }
 
 // Delete the "dist" folder
@@ -125,12 +132,20 @@ const webpack = {
   },
 
   build() {
+    fonts();
+    glyph();
     return gulp.src(PATHS.entries)
       .pipe(named())
       .pipe(webpackStream(webpack.config, webpack2))
-      .pipe($.if(PRODUCTION, $.uglify()
-        .on('error', e => { console.log(e); }),
-      ))
+      .pipe(
+        $.if(
+          PRODUCTION, 
+          uglify({ 
+           mangle: false, 
+           ecma: 6 
+          })
+        )
+      )
       .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev()))
       .pipe(gulp.dest(PATHS.dist + '/js'))
       .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev.manifest()))
@@ -239,13 +254,14 @@ function reload(done) {
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   fonts();
+  glyph();
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/assets/scss/**/*.scss', sass)
     .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
     .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
   gulp.watch('**/*.php', reload)
-    .on('change', path => log('File ' + colors.bold(colors.magenta(path)) + ' changed.'))
-    .on('unlink', path => log('File ' + colors.bold(colors.magenta(path)) + ' was removed.'));
+    .on('change', path => log('File ' + colors.bold(colors.red(path)) + ' changed.'))
+    .on('unlink', path => log('File ' + colors.bold(colors.red(path)) + ' was removed.'));
   gulp.watch('**/*.html', reload)
     .on('change', path => log('File ' + colors.bold(colors.cyan(path)) + ' changed.'))
     .on('unlink', path => log('File ' + colors.bold(colors.cyan(path)) + ' was removed.'));

@@ -100,3 +100,12 @@ footer {
 .sidebar-visible #form_module_search {
   display: block;
 }
+.form-horizontal .form-group.form-actions {
+  padding-top: 1em;
+  border-top: 1px dashed #ededed;
+  background-color: #f0f0f0;
+}
+.form-horizontal .form-group.form-actions {
+  margin-left: 8px;
+  margin-right: 8px;
+}
