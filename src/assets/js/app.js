@@ -15,6 +15,7 @@ require("jquery.flot");
 require("jquery.resize");
 require("jquery.growl");
 require("jquery-slimscroll");
+require("jquery-price-format");
 require("bootstrap-growl-ifightcrime");
 require("bootstrap-datepicker");
 require("bootstrap-timepicker");
@@ -37,6 +38,7 @@ if(is_log){
   console.log("jquery.slimScroll loaded?", $().slimScroll instanceof Function);
   console.log("bootstrap-growl-ifightcrime loaded?", $().bootstrapGrowl instanceof Function);
   console.log("select2 loaded?", $().select2 instanceof Function);
+  console.log("priceFormat loaded?", $().priceFormat instanceof Function);
   console.log("NProgress is a", typeof NProgress );
   console.log("NProgress loaded?", NProgress.start instanceof Function);
   console.log("dataTable is a", typeof dataTable );

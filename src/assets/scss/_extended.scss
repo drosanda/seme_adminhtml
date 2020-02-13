@@ -1,10 +1,9 @@
 /* Navbar */
 .navbar.navbar-default {
-    background-color: #f9fafc;
+  background-color: $navbar-def-bg;
 }
-
 .navbar.navbar-inverse {
-    background-color: #4c5471;
+  background-color: $navbar-inv-def-bg;
 }
 
 .navbar-fixed-top,

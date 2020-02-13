@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 @import 'theme/default';
+@import 'theme/cenah';
 //  Seme_AdminHTML settings.
 @import "//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,600italic,700,700italic";
 
@@ -13,7 +14,12 @@
 @import "node_modules/select2/src/scss/core.scss";
 @import "node_modules/select2-bootstrap-theme/dist/select2-bootstrap";
 @import "node_modules/datatables/media/css/jquery.dataTables";
+
+//load bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//end load bootstrap
+
 @import "node_modules/datatables-bootstrap3-plugin/media/css/datatables-bootstrap3";
 @import "node_modules/jquery.growl/stylesheets/jquery.growl.sass";
 @import "node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker";
