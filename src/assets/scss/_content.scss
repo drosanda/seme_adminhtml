@@ -135,8 +135,10 @@ a.wijet.wijet-h1:hover, a.wijet.wijet-h1:focus {
   box-shadow: none;
 }
 .wijet {
+  border: 1px #dddddd solid;
   background-color: #ffffff;
   margin-bottom: 10px;
+  border-radius: $wijet-border-radius;
 }
 .wijet-simple {
   padding: 15px;
@@ -172,6 +174,8 @@ a.wijet.wijet-h1:hover, a.wijet.wijet-h1:focus {
 .wijet .wijet-ekstra-full, .wijet .wijet-ekstra {
   position: relative;
   padding: 0.25em;
+  border-top-left-radius: $wijet-border-radius;
+  border-top-right-radius: $wijet-border-radius;
 }
 .wijet .wijet-pilihan, .wijet .wijet-pilihan-kiri {
   top: 5px;
@@ -187,7 +191,13 @@ a.wijet.wijet-h1:hover, a.wijet.wijet-h1:focus {
 .wijet .wijet-isi-tipis small {
   color: #eeeeee;
 }
-
+.wijet-ekstra h3 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+.row.row-wijet {
+  padding-top: 1em;
+}
 .row.row-filter {
   padding-bottom: 1em;
   margin-bottom: 1em;

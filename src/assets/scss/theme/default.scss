@@ -46,6 +46,9 @@ $theme-colors: (
   "danger": #e74c3c
 );
 
+
+$wijet-border-radius: 0.5em;
+
 .panel.panel-accent-gold {
     border-top: $accent-size $accent-border $bg-gold;
 }
