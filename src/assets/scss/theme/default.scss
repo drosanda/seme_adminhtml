@@ -27,15 +27,29 @@ $nav-foot-border: #e7e7e7;
 $accent-size: "3px";
 $accent-border: "solid";
 $bg-blue: #5bc0de;
+$cl-blue: #5bc0de;
 $bg-red: #d9534f;
+$cl-red: #d9534f;
 $bg-gold: #f0ad4e;
+$cl-gold: #f0ad4e;
 $bg-green: #f0ad4e;
+$cl-green: #f0ad4e;
 
 $color-neon: #5bc0de;
 
 $border-grey: 1px solid #dbe1e8;
 
 $bg-asbestos: #7f8c8d;
+$cl-asbestos: #7f8c8d;
+
+$bg-emerald: #50C878;
+$cl-emerald: #50C878;
+
+$bg-asphalt: #34495e;
+$cl-asphalt: #34495e;
+
+$bg-teal: #00aba9;
+$cl-teal: #00aba9;
 
 $theme-colors: (
   "primary": #1bbae1,
@@ -86,7 +100,7 @@ $wijet-border-radius: 0.5em;
 }
 
 .panel.panel-accent-teal {
-    border-top: $accent-size $accent-border #00aba9;
+    border-top: $accent-size $accent-border $bg-teal;
 }
 
 .panel.panel-accent-turquoise {
@@ -139,4 +153,10 @@ $wijet-border-radius: 0.5em;
 
 .bg-color-blue {
     background-color: $bg-blue;
+}
+.bg-color-emerald {
+  background-color: $bg-emerald;
+}
+.bg-color-asphalt {
+  background-color: $bg-asphalt;
 }

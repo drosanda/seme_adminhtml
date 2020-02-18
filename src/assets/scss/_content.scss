@@ -195,6 +195,67 @@ a.wijet.wijet-h1:hover, a.wijet.wijet-h1:focus {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
 }
+
+.wijet-simple.wijet-blue .wijet-icon{
+  background-color: $bg-blue;
+}
+.wijet-simple.wijet-blue .wijet-content{
+  color: $cl-blue;
+}
+.wijet-simple.wijet-blue .wijet-content small{
+  color: #777777;
+}
+
+.wijet-simple.wijet-green .wijet-icon{
+  background-color: $bg-green;
+}
+.wijet-simple.wijet-green .wijet-content{
+  color: $cl-green;
+}
+.wijet-simple.wijet-green .wijet-content small{
+  color: #777777;
+}
+
+.wijet-simple.wijet-emerald .wijet-icon{
+  background-color: $bg-emerald;
+}
+.wijet-simple.wijet-emerald .wijet-content{
+  color: $cl-emerald;
+}
+.wijet-simple.wijet-emerald .wijet-content small{
+  color: #777777;
+}
+
+.wijet-simple.wijet-asphalt .wijet-icon{
+  background-color: $bg-asphalt;
+}
+.wijet-simple.wijet-asphalt .wijet-content{
+  color: $cl-asphalt;
+}
+.wijet-simple.wijet-asphalt .wijet-content small{
+  color: #777777;
+}
+
+.wijet-simple.wijet-gold .wijet-icon{
+  background-color: $bg-gold;
+}
+.wijet-simple.wijet-gold .wijet-content{
+  color: $cl-gold;
+}
+.wijet-simple.wijet-gold .wijet-content small{
+  color: #777777;
+}
+
+.wijet-simple.wijet-teal .wijet-icon{
+  background-color: $bg-teal;
+}
+.wijet-simple.wijet-teal .wijet-content{
+  color: $cl-teal;
+}
+.wijet-simple.wijet-gold .wijet-content small{
+  color: #777777;
+}
+
 .row.row-wijet {
   padding-top: 1em;
 }
