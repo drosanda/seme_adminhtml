@@ -25,6 +25,7 @@ import Quill from 'quill';
 window.Quill = Quill;
 
 import dataTable from 'datatables';
+import 'fullcalendar';
 window.dataTable = dataTable;
 
 if(is_log){
@@ -44,6 +45,7 @@ if(is_log){
   console.log("dataTable is a", typeof dataTable );
   console.log("dataTable loaded?", $().dataTable instanceof Function);
   console.log("quill loaded?", Quill instanceof Object);
+  console.log("fullCalendar loaded?", $().fullCalendar instanceof Function);
 }
 
 //load seme.js
