@@ -56,8 +56,24 @@ var Seme = function(){
     $('.input-datepicker-close').datepicker({weekStart: 1}).on('changeDate', function(e){ $(this).datepicker('hide'); });
     
     //timepicker
-    $('.input-timepicker').timepicker({minuteStep: 1,showSeconds: true,showMeridian: true});
-    $('.input-timepicker24').timepicker({minuteStep: 1,showSeconds: true,showMeridian: false});
+    $('.input-timepicker').timepicker({
+      minuteStep: 1,
+      showSeconds: true,
+      showMeridian: true,
+      icons: {
+        up: 'fa fa-chevron-up',
+        down: 'fa fa-chevron-down'
+      }
+    });
+    $('.input-timepicker24').timepicker({
+      minuteStep: 1,
+      showSeconds: false,
+      showMeridian: false,
+      icons: {
+        up: 'fa fa-chevron-up',
+        down: 'fa fa-chevron-down'
+      }
+    });
     
     if($(".ckeditor").length >0 ){
       window.CKEDITOR.create(

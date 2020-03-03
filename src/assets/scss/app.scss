@@ -17,6 +17,8 @@
 
 //load bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+$icon-font-path: '../fonts/bootstrap/';
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 //end load bootstrap
 
