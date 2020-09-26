@@ -40,7 +40,7 @@
       </div>
     </div>
   </header>
-  
+
   <div id="page-container" class="sidebar-visible">
     <div id="sidebar">
       <div class="sidebar-wrapper">
@@ -134,7 +134,7 @@
               <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-notes_2 sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Forms</span></a>
               <ul>
                 <li>
-                  <a href="page_forms_general.html">General</a>
+                  <a href="form.html">General</a>
                 </li>
                 <li>
                   <a href="page_forms_components.html">Components</a>
@@ -420,7 +420,7 @@
               <span class="icon-bar"></span>
             </button>
           </div>
-          
+
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div id="navbar" class="collapse navbar-collapse" >
             <ul class="nav navbar-nav">
@@ -472,14 +472,14 @@
           <li>Bank</li>
         </ul>
         <!-- END Static Layout Header -->
-        
+
         <!-- Content -->
         <div class="block full">
-          
+
           <div class="block-title">
             <h2><strong>Bank</strong></h2>
           </div>
-          
+
           <div class="table-responsive">
             <table id="semeTable" class="table table-vcenter table-condensed table-bordered">
               <thead>
@@ -496,11 +496,11 @@
               </tbody>
             </table>
           </div>
-          
+
         </div>
         <!-- END Content -->
       </div>
-      
+
       <footer class="clearfix">
         <div class="pull-right">
           Made with <i class="fa fa-heart text-danger"></i> by <a href="https://cenah.co.id/" target="_blank">Cenah</a>
@@ -510,7 +510,7 @@
         </div>
       </footer>
     </div>
-    
+
   </div>
   <script src="dist/js/app.js"></script>
   <script>
@@ -541,12 +541,12 @@
           });
         },
         print: function(){
-          
+
         }
       }
     }();
     Seme.init();
-    
+
     var semeTable = {};
     $(document).ready(function(e){
       $("body").on("click",".btn-sidebar-toggle",function(e){
@@ -563,9 +563,9 @@
         }else{
           $.growl({ title: "Growl", message: "The kitten is awake!" });
         }
-        
+
       }
-      
+
       gritter("halo world","success");
       Seme.datatables();
       if($('#semeTable').length>0){
@@ -626,7 +626,7 @@
       }
     });
   </script>
-  
+
   <script defer id="__bs_script__">
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
     </script>
